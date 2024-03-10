@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style> *,  *:before,  *:after  {
+  -moz-box-sizing:  border-box;
+  -webkit-box-sizing:  border-box;
+  box-sizing:  border-box;
+}
+body  {
+   font-family: poppins;
+  color:  #384047;
+  background-image: url('http://designvkp.com/wp-content/uploads/2015/07/pattern.png');
+  background-position:  0px 0px;
+  background-repeat:  repeat;
+  animation:  animatedBackground 40s linear infinite;
+  opacity: 0.9;
+
+            background-image: url(./assets/bg.jpg);
+        
+}
+@keyframes animatedBackground  {
+  from  {
+  background-position:  0 0;
+}
+to  {
+  background-position:  100% 0;
+}
+}
+form  {
+  max-width:  300px;
+  margin:  10px auto;
+  padding:  10px 20px;
+  background:  #f4f7f8;
+  border-radius:  8px;
+}
+
+a{
+color:#fff;
+font-weight:400;
+text-decoration:none;
+font-size:26px;
+}
+
+h1  {
+  margin:  0 0 30px 0;
+  text-align:  center;
+}
+input[type="text"],  input[type="password"],  input[type="date"],  input[type="datetime"],  input[type="email"],  input[type="number"],  input[type="search"],  input[type="tel"],  input[type="time"],  input[type="url"],  textarea,  select ,option {
+  background:  #e8e8e8;
+  border:  none;
+  font-size:  16px;
+  height:  auto;
+  margin:  0;
+  outline:  0;
+  padding:  15px;
+  width:  100%;
+  background-color:  #e8eeef;
+  color:  #8a97a0;
+  box-shadow:  0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom:  30px;
+}
+input[type="radio"],  input[type="checkbox"]  {
+  margin:  0 4px 8px 0;
+}
+select  {
+  padding:  6px;
+  height:  32px;
+  border-radius:  2px;
+}
+
+select{
+height:50px;
+}
+button  {
+  border: none;
+  padding:  19px 39px 18px 39px;
+  color:  #FFF;
+  background-color:  #007bff;;
+  font-size:  18px;
+  text-align:  center;
+  font-style:  normal;
+  border-radius:  5px;
+  width:  100%;
+ 
+}
+fieldset  {
+  margin-bottom:  30px;
+  border:  none;
+}
+legend  {
+  font-size:  1.4em;
+  margin-bottom:  10px;
+}
+label  {
+  display:  block;
+  margin-bottom:  8px;
+}
+label.light  {
+  font-weight:  300;
+  display:  inline;
+}
+.number  {
+  background-color:  #009087;;
+  color:  #fff;
+  height:  30px;
+  width:  30px;
+  display:  inline-block;
+  font-size:  0.8em;
+  margin-right:  4px;
+  line-height:  30px;
+  text-align:  center;
+  text-shadow:  0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius:  100%;
+}
+@media screen and (min-width: 480px)  {
+  form  {
+  max-width:  480px;
+}
+}
+div{
+padding:5px 10px;
+background:#007bff;
+
+position:relative;
+color:#fff;
+border-radius:2px;
+text-align:center;
+float:left;
+cursor:pointer
+}
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}</style>
+</head>
+<body>
+
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      <form class="form"  action="/articlesubmit" method="post" >
+	
+      
+        <h1 style="color:#009087;">Hello Article Holders</h1>
+        
+        <fieldset>
+            <label>
+                <span>Paper Title</span>
+                  <input name="patentTitle" required="" placeholder="" type="text" class="input">
+                  
+              </label> 
+           <label  for="authorName">
+             <span>Author's name</span>
+                <input  id ="authorName" name="authorName" placeholder="" type="text" class="input">
+                
+            </label>
+        
+        
+        
+
+
+
+
+<span>Department</span>
+<label for="Department">
+<select id="Department" name='Department'>
+
+  <option value="IT" name='Department'>IT</option>
+  <option value="CSE" name='Department'>CSE</option>
+  <option value="EEE" name='Department'>EEE</option>
+  <option value="ECE" name='Department'>ECE</option>
+  <option value="MECH" name='Department'>MECH</option>
+  <option value="MTS" name='Department'>MTS</option>
+</select></label>
+
+<label  for="journalName">
+    <span>Journal Name</span>
+       <input  id ="journalName" name="journalName" placeholder="" type="text" class="input">
+       
+   </label>
+   <label  for="year">
+    <span>PublishedYear</span>
+       <input  id ="year" name="year" placeholder="" type="text" class="input">
+       
+   </label>
+   <label  for="issn">
+    <span>ISSN Number</span>
+       <input  id ="issn" name="issn" placeholder="" type="text" class="input">
+       
+   </label>
+            
+       
+           
+        </select></label>
+        <span>Article Link</span>
+        <input name="articleLink" required="" placeholder="" type="text" class="input">
+        
+    </label> 
+    
+        <p class="message">The Above mentioned Informations are True to my Knowledge</p>
+        <button class="submit">Submit</button>
+          
+      </form>
+      
+    </body>
+</html>
+</body>
+</html>
